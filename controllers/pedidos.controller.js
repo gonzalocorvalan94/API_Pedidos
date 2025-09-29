@@ -1,3 +1,5 @@
+//una const getpedidos = async function devuelve el json y retorna con status(200), el  json 
+//routes
 import { Router } from "express";
 import {
   getAllPedidos,
@@ -31,8 +33,8 @@ router.get("/:id", async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    const {
-      nombre,
+    const newPedido ={
+      nombre: req.body,
       direccion,
       telefono,
       precio,
@@ -40,7 +42,7 @@ router.post("/", async (req, res) => {
       propina,
       preciototal,
       forma_de_pago,
-    } = req.body;
+    };
     if (
       !nombre ||
       !direccion ||
@@ -53,7 +55,7 @@ router.post("/", async (req, res) => {
     ) {
       return res.status(400).json({ error: "Faltan campos obligatorios" });
     }
-    const nuevoPedido = await addPedido(pedidoData);
+    const nuevoPedido = await addPedido({nombre, direccion, telefono, envio, propina,preciototal, forma_de_pago});
     res.status(201).json(nuevoPedido);
   } catch (error) {
     console.log(error);

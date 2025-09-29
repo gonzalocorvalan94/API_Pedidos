@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "nombre": "Serena",
-    "direccion": "Calle 14",
-    "telefono": "11145663",
-    "precio": 4500,
-    "envio": 200,
-    "propina": 50,
-    "preciototal": 130,
+    "nombre": "Carla García",
+    "direccion": "Belgrano 30",
+    "telefono": "11336661100",
+    "precio": 5500,
+    "envio": 600,
+    "propina": 770,
+    "preciototal": 4100,
     "forma_de_pago": "efectivo"
   },
   {
@@ -53,17 +53,6 @@
     "propina": 400,
     "preciototal": 6100,
     "forma_de_pago": "Transferencia"
-  },
-  {
-    "id": 6,
-    "nombre": "Prueba API",
-    "direccion": "Calle 123",
-    "telefono": "111222333",
-    "precio": 100,
-    "envio": 20,
-    "propina": 10,
-    "preciototal": 130,
-    "forma_de_pago": "efectivo"
   },
   {
     "id": 7,
@@ -129,6 +118,16 @@
     "envio": 200,
     "propina": 50,
     "preciototal": 130,
+    "forma_de_pago": "efectivo"
+  },
+  {
+    "id": 13,
+    "nombre": "Carla García",
+    "direccion": "Belgrano 30",
+    "telefono": "11336661100",
+    "envio": 600,
+    "propina": 770,
+    "preciototal": 4100,
     "forma_de_pago": "efectivo"
   }
 ]
