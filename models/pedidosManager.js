@@ -1,5 +1,5 @@
 import fs from "fs/promises"; //para poder usar async/await
-import { Pedido } from "./pedidos.models";
+import { Pedido } from "./pedidos.models.js";
 import path from "path";
 import { fileURLToPath } from "url";
 
